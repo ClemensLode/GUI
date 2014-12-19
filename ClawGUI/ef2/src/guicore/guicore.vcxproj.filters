@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\enums">
+      <UniqueIdentifier>{0c6c6c1e-8a46-469d-a102-5e9a501602a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\storages">
+      <UniqueIdentifier>{418a35bc-dbf2-4885-975c-f572f13cb036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\storages">
+      <UniqueIdentifier>{dc835c08-a4ed-460b-9fb6-1557588ce7be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buttoncolors.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="fonttype.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="windowcolors.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="bitmap.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="brush.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="color.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="cursor.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="font.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="pen.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="buttonanimation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="enums\buttonanimationphase.hpp">
+      <Filter>Headerdateien\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="enums\buttonanimationtype.hpp">
+      <Filter>Headerdateien\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="enums\brushstyle.hpp">
+      <Filter>Headerdateien\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="enums\penstyle.hpp">
+      <Filter>Headerdateien\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="bitmap_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="brush_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="buttonanimation_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="buttoncolors_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="color_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="cursor_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="font_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="fonttype_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="pen_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="windowcolors_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="guicore_directories.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+    <ClInclude Include="theme.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="theme_storage.hpp">
+      <Filter>Headerdateien\storages</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="buttoncolors.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="fonttype.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="windowcolors.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="bitmap.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="brush.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="color.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cursor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="pen.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="buttonanimation.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="surface.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="bitmap_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="brush_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="buttonanimation_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="buttoncolors_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="color_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="cursor_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="font_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="fonttype_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="pen_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="windowcolors_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="guicore_directories.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+    <ClCompile Include="theme.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="theme_storage.cpp">
+      <Filter>Quelldateien\storages</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

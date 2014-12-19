@@ -1,0 +1,23 @@
+test_lang_test
+	The text function, language function and signalling (for text updates are tested here.
+
+test_geometry_test
+	The geometry functions are tested (distance, coordinate etc.).
+
+test_core_test
+	The basic core functions are tested. These are mainly data holders with limited functionality.
+
+test_goal_test
+	The goal entry functions are used on a given rule tests. It is tested whether the program can find the needed in-between goals for a given goal.
+
+test_sdl_test
+	Wrapper for SDL
+
+test_guicore_test
+	Base GUI classes
+
+test_gui_test
+	Base GUI functionality
+
+test_ui_test
+	EF specific implementations

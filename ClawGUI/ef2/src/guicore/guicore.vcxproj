@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E6FF686-292A-447C-AFE4-0541A429FC62}</ProjectGuid>
+    <RootNamespace>guicore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4514;4820;4710;4548;4986;4365;4996;4668</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_45_0;..\..\..\SDL_image-1.2.7\include;..\..\..\SDL-1.2.14\include;..\..\..\SDL_ttf-2.0.10\include;..\..\..;..;..\..\..\smpeg-0.4.4</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_45_0;..\..\..\SDL_image-1.2.7\include;..\..\..\SDL-1.2.14\include;..\..\..\SDL_ttf-2.0.9\include;..\..\..;..;..\..\..\smpeg-0.4.4</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;BOOST_DISABLE_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="animation.hpp" />
+    <ClInclude Include="animation_storage.hpp" />
+    <ClInclude Include="bitmap_storage.hpp" />
+    <ClInclude Include="brush_storage.hpp" />
+    <ClInclude Include="buttonanimation.hpp" />
+    <ClInclude Include="bitmap.hpp" />
+    <ClInclude Include="brush.hpp" />
+    <ClInclude Include="buttonanimation_storage.hpp" />
+    <ClInclude Include="buttoncolors.hpp" />
+    <ClInclude Include="buttoncolors_storage.hpp" />
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="color_storage.hpp" />
+    <ClInclude Include="cursor.hpp" />
+    <ClInclude Include="cursor_storage.hpp" />
+    <ClInclude Include="enums\brushstyle.hpp" />
+    <ClInclude Include="enums\buttonanimationphase.hpp" />
+    <ClInclude Include="enums\buttonanimationtype.hpp" />
+    <ClInclude Include="enums\penstyle.hpp" />
+    <ClInclude Include="font.hpp" />
+    <ClInclude Include="fonttype.hpp" />
+    <ClInclude Include="fonttype_storage.hpp" />
+    <ClInclude Include="font_storage.hpp" />
+    <ClInclude Include="guicore_directories.hpp" />
+    <ClInclude Include="pen.hpp" />
+    <ClInclude Include="pen_storage.hpp" />
+    <ClInclude Include="surface.hpp" />
+    <ClInclude Include="theme.hpp" />
+    <ClInclude Include="theme_storage.hpp" />
+    <ClInclude Include="windowcolors.hpp" />
+    <ClInclude Include="windowcolors_storage.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animation_storage.cpp" />
+    <ClCompile Include="bitmap_storage.cpp" />
+    <ClCompile Include="brush_storage.cpp" />
+    <ClCompile Include="buttonanimation.cpp" />
+    <ClCompile Include="bitmap.cpp" />
+    <ClCompile Include="brush.cpp" />
+    <ClCompile Include="buttonanimation_storage.cpp" />
+    <ClCompile Include="buttoncolors.cpp" />
+    <ClCompile Include="buttoncolors_storage.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="color_storage.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="cursor_storage.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="fonttype.cpp" />
+    <ClCompile Include="fonttype_storage.cpp" />
+    <ClCompile Include="font_storage.cpp" />
+    <ClCompile Include="guicore_directories.cpp" />
+    <ClCompile Include="pen.cpp" />
+    <ClCompile Include="pen_storage.cpp" />
+    <ClCompile Include="surface.cpp" />
+    <ClCompile Include="theme.cpp" />
+    <ClCompile Include="theme_storage.cpp" />
+    <ClCompile Include="windowcolors.cpp" />
+    <ClCompile Include="windowcolors_storage.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

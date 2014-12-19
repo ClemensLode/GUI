@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{8eec9e25-c80d-4b00-ad39-cdf1dee77bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{b131a1ca-a1cd-4c7b-ba65-93a8aebdaebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\misc">
+      <UniqueIdentifier>{b6f47f67-a1c2-4e2d-966c-9e2e0fdf7ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\goal">
+      <UniqueIdentifier>{993a20da-15ab-44da-b7bf-847ddce5a2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\games">
+      <UniqueIdentifier>{5735ea20-9100-41ee-9dc4-7597db9ed405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{d2209957-b968-441b-8699-b1ddacaa574b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ai">
+      <UniqueIdentifier>{0a6a03ee-9de8-4325-bffc-1dc9eaade472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{a13263ca-c1db-4b34-94b9-f1d552fe3b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\enums">
+      <UniqueIdentifier>{2f60ead5-348e-4432-8e39-9b357524d416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ai">
+      <UniqueIdentifier>{55b7e396-9a2e-4fef-a8c1-3b1a73d7e3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\misc">
+      <UniqueIdentifier>{afc374a3-9d6d-409a-aeb4-e6e5cb2ab5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\goal">
+      <UniqueIdentifier>{5e420cd4-fe8e-44a4-a6e4-79c1899cbb50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\games">
+      <UniqueIdentifier>{35f84120-614e-4e75-9400-b3241ffdda77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{e71c69a3-80c5-4933-96ad-fd5fe2d33003}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\games\broodwar.cpp">
+      <Filter>Source Files\games</Filter>
+    </ClCompile>
+    <ClCompile Include="src\games\gamedata.cpp">
+      <Filter>Source Files\games</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\simulator.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\state.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\goal\processedgoal.cpp">
+      <Filter>Source Files\goal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\goal\processedgoalentry.cpp">
+      <Filter>Source Files\goal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\timechange.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\randomai.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\neededresource.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\code.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\buildprocessor.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\buildorder.cpp">
+      <Filter>Source Files\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\coordinate.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\distance.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\goal.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\goalentry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\government.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\location.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\map.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\path.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\player.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\race.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\rules.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\unit.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\unitbattlestats.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\unitresourcetype.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\units.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\unittype.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ai\base_ai.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\timechange.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\randomai.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\neededresource.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\code.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\buildprocessor.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\buildorder.hpp">
+      <Filter>Header Files\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\state.hpp">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\simulator.hpp">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\games\gamedata.hpp">
+      <Filter>Header Files\games</Filter>
+    </ClInclude>
+    <ClInclude Include="src\games\broodwar.hpp">
+      <Filter>Header Files\games</Filter>
+    </ClInclude>
+    <ClInclude Include="src\goal\processedgoal.hpp">
+      <Filter>Header Files\goal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\goal\processedgoalentry.hpp">
+      <Filter>Header Files\goal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\misc\io.hpp">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\misc\loadsave.hpp">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\unittypeproperty.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\unittype.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\units.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\unitresourcetype.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\unitbattlestats.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\unit.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\rules.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\race.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\player.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\path.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\map.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\location.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\id.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\government.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\goalentry.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\goal.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\distance.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\coordinate.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\enums\unitmovementtypeenums.hpp">
+      <Filter>Header Files\core\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\enums\unitresourcetypeenums.hpp">
+      <Filter>Header Files\core\enums</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

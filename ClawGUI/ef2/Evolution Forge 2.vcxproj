@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\boost_1_43_0\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\boost_1_43_0\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ai\buildorder.cpp" />
+    <ClCompile Include="src\ai\buildprocessor.cpp" />
+    <ClCompile Include="src\ai\code.cpp" />
+    <ClCompile Include="src\ai\neededresource.cpp" />
+    <ClCompile Include="src\ai\randomai.cpp" />
+    <ClCompile Include="src\ai\timechange.cpp" />
+    <ClCompile Include="src\core\coordinate.cpp" />
+    <ClCompile Include="src\core\distance.cpp" />
+    <ClCompile Include="src\core\game.cpp" />
+    <ClCompile Include="src\core\goal.cpp" />
+    <ClCompile Include="src\core\goalentry.cpp" />
+    <ClCompile Include="src\core\government.cpp" />
+    <ClCompile Include="src\core\location.cpp" />
+    <ClCompile Include="src\core\map.cpp" />
+    <ClCompile Include="src\core\path.cpp" />
+    <ClCompile Include="src\core\player.cpp" />
+    <ClCompile Include="src\core\race.cpp" />
+    <ClCompile Include="src\core\rules.cpp" />
+    <ClCompile Include="src\core\unit.cpp" />
+    <ClCompile Include="src\core\unitbattlestats.cpp" />
+    <ClCompile Include="src\core\unitresourcetype.cpp" />
+    <ClCompile Include="src\core\units.cpp" />
+    <ClCompile Include="src\core\unittype.cpp" />
+    <ClCompile Include="src\games\broodwar.cpp" />
+    <ClCompile Include="src\games\gamedata.cpp" />
+    <ClCompile Include="src\game\simulator.cpp" />
+    <ClCompile Include="src\game\state.cpp" />
+    <ClCompile Include="src\goal\processedgoal.cpp" />
+    <ClCompile Include="src\goal\processedgoalentry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ai\base_ai.hpp" />
+    <ClInclude Include="src\ai\buildorder.hpp" />
+    <ClInclude Include="src\ai\buildprocessor.hpp" />
+    <ClInclude Include="src\ai\code.hpp" />
+    <ClInclude Include="src\ai\neededresource.hpp" />
+    <ClInclude Include="src\ai\randomai.hpp" />
+    <ClInclude Include="src\ai\timechange.hpp" />
+    <ClInclude Include="src\core\coordinate.hpp" />
+    <ClInclude Include="src\core\distance.hpp" />
+    <ClInclude Include="src\core\enums\unitmovementtypeenums.hpp" />
+    <ClInclude Include="src\core\enums\unitresourcetypeenums.hpp" />
+    <ClInclude Include="src\core\game.hpp" />
+    <ClInclude Include="src\core\goal.hpp" />
+    <ClInclude Include="src\core\goalentry.hpp" />
+    <ClInclude Include="src\core\government.hpp" />
+    <ClInclude Include="src\core\id.hpp" />
+    <ClInclude Include="src\core\location.hpp" />
+    <ClInclude Include="src\core\map.hpp" />
+    <ClInclude Include="src\core\path.hpp" />
+    <ClInclude Include="src\core\player.hpp" />
+    <ClInclude Include="src\core\race.hpp" />
+    <ClInclude Include="src\core\rules.hpp" />
+    <ClInclude Include="src\core\unit.hpp" />
+    <ClInclude Include="src\core\unitbattlestats.hpp" />
+    <ClInclude Include="src\core\unitresourcetype.hpp" />
+    <ClInclude Include="src\core\units.hpp" />
+    <ClInclude Include="src\core\unittype.hpp" />
+    <ClInclude Include="src\core\unittypeproperty.hpp" />
+    <ClInclude Include="src\games\broodwar.hpp" />
+    <ClInclude Include="src\games\gamedata.hpp" />
+    <ClInclude Include="src\game\simulator.hpp" />
+    <ClInclude Include="src\game\state.hpp" />
+    <ClInclude Include="src\goal\processedgoal.hpp" />
+    <ClInclude Include="src\goal\processedgoalentry.hpp" />
+    <ClInclude Include="src\misc\io.hpp" />
+    <ClInclude Include="src\misc\loadsave.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
